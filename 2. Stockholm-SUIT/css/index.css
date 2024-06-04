@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+figcaption {
+    display: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+p a {
+    display: inline;
+}
+
+img,
+picture,
+video,
+iframe {
+    display: block;
+    width: 100%;
+    height: initial;
+}
+
+:root {
+    font-size: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/open-sans-v40-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.Header {
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header-h1 {
+    width: 5rem;
+}
+
+.Nav-ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    font-weight: 700;
+}
+
+.Section {
+    margin: 0 3rem;
+}
+
+.Section-h2 {
+    display: none;
+}
+
+.Section-p {
+    font-size: 1.25rem;
+    padding: 1rem 0 3rem;
+}
+
+.Section-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+}
+
+.Section-img {
+    width: 100%;
+}
+
+.Section .Section-p:last-child {
+    text-align: center;
+    padding: 2rem 0 3rem 0;
+    width: 100%;
+    border-bottom: 2px solid lightgrey;
+}
+
+.Footer {
+    /* background-color: aqua; */
+    margin: 1rem 3rem 1.5rem 3rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Footer-p {
+    font-size: .75rem;
+}
+
+.Footer-ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
